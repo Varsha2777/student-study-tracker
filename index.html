@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Study Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🎓 Student Study Tracker</h1>
+    <div class="container">
+        <h2>Add Assignment</h2>
+        <input type="text" id="title" placeholder="Assignment Title">
+        <input type="text" id="subject" placeholder="Subject">
+        <input type="date" id="dueDate">
+        <button onclick="addAssignment()">Add</button>
+    </div>
+    <div class="container">
+        <h2>Your Assignments</h2>
+        <ul id="assignmentList"></ul>
+    </div>
+    <div class="container">
+        <h2>Log Study Hours</h2>
+        <input type="number" id="hours" placeholder="Hours">
+        <button onclick="logHours()">Log Hours</button>
+        <p id="totalHours">Total Study Hours: 0</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
